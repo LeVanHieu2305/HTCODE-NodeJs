@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lộ trình học lập trình cho người mới tại HT CODE | Tự học lập trình từ đầu ở nhà</title>
+    <link rel="shortcut icon" href="./assets/img/iconlogo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/postdetail.css">
+    <link rel="stylesheet" href="../assets/css/gird.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-1">
+                        <nav class="nav-bar">
+                            <!-- Account - Thêm bài viết - Home -  Lộ trình - Khóa học - Bài viết -->
+                            <div class="menu-items">
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <!-- User -->
+                                        <label for="user-check" href="#" class="nav-link border w-h-40">
+                                            <img src="../assets/image/user.jpg" alt="" class="img-user">
+                                        </label>
+                                        <input type="checkbox" hidden class="user" name="" id="user-check">
+                                        <ul class="user__share">
+                                            <li class="user__share-link">
+                                                <div class="user__share-link-username">
+                                                    <div class="user__share-link-img">
+                                                        <img src="../assets/image/user.jpg" alt="">
+                                                    </div>
+                                                    <div class="user__share-link-name">
+                                                        <h4 class="user__share-heading">Le Van Hieu</h4>
+                                                        <p class="user__share-sub">@levanhieu23</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Bảng điều khiển</a>
+                                                <a href="#" class="user__share-text">Khóa học của bạn</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Trang cá nhân</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Viết blog</a>
+                                                <a href="#" class="user__share-text">Bài viết của tôi</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Bài viết yêu thích</a>
+                                                <a href="#" class="user__share-text">Bài viết đã lưu</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Cài đặt</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Plus -->
+                                        <a href="#" class="nav-link nav-link-active w-h-40">
+                                            <i class="uil uil-plus nav-link-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Home -->
+                                        <a href="../index.html" class="nav-link w-h-72 ">
+                                            <i class="uil uil-estate nav-link-icon"></i>
+                                            <span class="link-name">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Lộ trình -->
+                                        <a href="route.html" class="nav-link w-h-72">
+                                            <i class="uil uil-location-arrow-alt nav-link-icon"></i>
+                                            <span class="link-name">Lộ trình</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Khóa học -->
+                                        <a href="course.html" class="nav-link w-h-72">
+                                            <i class="uil uil-book-open nav-link-icon"></i>
+                                            <span class="link-name">Khóa học</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Bài viết -->
+                                        <a href="post.html" class="nav-link w-h-72  menu__active">
+                                            <i class="uil uil-notes nav-link-icon"></i>
+                                            <span class="link-name">Bài viết</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Đăng xuất-->
+                                <ul class="logout-mode">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link w-h-72">
+                                            <i class="uil uil-signout signout--active nav-link-icon"></i>
+                                            <span class="link-name signout--active">Đăng xuất</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col l-11">
+                        <div class="dashboard">
+                            <div class="top">
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img src="../assets/image/logo2.png" alt="" class="img-logo">
+                                    </a>
+                                    <h4 class="text-logo">
+                                        <a href="post.html" class="back"><i class="back-icon ti-angle-left"></i>Quay lại</a>
+                                    </h4>
+                                </div>
+
+                                <div class="search-box">
+                                    <i class="uil uil-search"></i>
+                                    <input type="search" placeholder="Tìm kiếm khóa học, bài viết, video, ...">
+                                </div>
+
+                                <div class="bell-cart">
+                                    <!--  Bell-->
+                                    <li class="header__navbar-fonticon-list header__wrap">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <a href="./assets/cart.html">
+                                                <i class="header__navbar-fonticon-icon ti-bell"></i>
+                                                <span class="header__icon-notice">3</span>
+                                            </a>
+
+                                            <!-- No icon class = header__icon-list--no-icon -->
+                                            <div class="header__list">
+                                                <img src="assets/img/no-cart.png" alt="" class="header__icon-list--no-icon header__icon-no-icon-img">
+                                                <span class="header__icon-list--no-icon header__icon-list--no-icon-msg">Chưa có sản phẩm</span>
+
+                                                <!-- Have icon -->
+                                                <!-- <h4 class="header__icon-heading">Thông báo mới nhất</h4> -->
+                                                <ul class="header__icon-list-items">
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Cart -->
+                                    <li class="header__navbar-fonticon-list header__wrap cart-check-list">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <label for="cart-check">
+                                                <i class="header__navbar-fonticon-icon ti-shopping-cart"></i>
+                                                <span class="header__icon-notice">0</span>
+                                            </label>
+                                        </div>
+                                        <input type="checkbox" hidden id="cart-check" class="cart">
+                                        <div class="cart__share">
+                                            <label for="cart-check" class="ti-close cart-icon-close"></label>
+                                            <table class="cart__table">
+                                                <caption>Giỏ hàng của bạn</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sản phẩm</th>
+                                                        <th>Hình ảnh</th>
+                                                        <th>Số lượng</th>
+                                                        <th>Thành tiền</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <!-- No Have product in cart -->
+                                                <tbody class="nohave__cart">
+                                                    <tr>
+                                                        <td class="nohave__cart-heading" colspan="6">You have no products in your shopping cart</td>
+                                                    </tr>
+                                                </tbody>
+
+                                                <!-- Have product in cart -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td>NodeJS</td>
+                                                        <td><img src="../assets/image/course/nodejs.png" alt="" class="cart__table-img"></td>
+                                                        <td>
+                                                            <input type="number" min="1" max="2" value="1">
+                                                        </td>
+                                                        <td>đ 1.799.000</td>
+                                                        <td><span class="remove">Xóa</span></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>ReactJS</td>
+                                                        <td><img src="../assets/image/course/reactjs.png" alt="" class="cart__table-img"></td>
+                                                        <td>
+                                                            <input type="number" min="1" max="2" value="1">
+                                                        </td>
+                                                        <td>đ 2.999.000</td>
+                                                        <td><span class="remove">Xóa</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="total__cart">
+                                                <span>Tổng tiền:</span><span class="total__cart-active"> đ 3.234.000</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Login -->
+                                    <li class="header__navbar-fonticon-list header__wrap">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <a href="./login.html" class="btn-login">Đăng nhập</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+
+                            <div class="dash-content">
+                                <div class="blog__witer">
+                                    <div class="row sm-gutter">
+                                        <div class="col l-3 m-6 c-6">
+                                            <div class="home-product-item-user-no-jus">
+                                                <div class="home-product-item-user-img">
+                                                    <img src="./image/post/user.jpg" alt="">
+                                                </div>
+                                                <span class="home-product-item-user-name-no-jus">Le Van Hieu</span>
+                                            </div>
+                                            <hr>
+                                            <div class="heart-comment">
+                                                <span class="heart-comment-favatext">
+                                                    <i class="heart-comment-icon ti-heart"></i> 10
+                                                </span>
+                                                <span class="heart-comment-favatext">
+                                                    <i class="heart-comment-icon ti-comment-alt"></i> 2
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col l-7 m-6 c-6">
+                                            <div class="row sm-gutter">
+                                                <div class="col l-12 m-6 c-6">
+                                                    <a href="postdetail.html" class="detailhome-product-item">
+                                                        <div class="detailhome-product-item-all">
+                                                            <div class="detailhome-product-item-text">
+                                                                <h4 class="detailhome-product-item__name">Học được gì ở HT CODE?</h4>
+                                                                <div class="detailhome-product-item-user-save">
+                                                                    <div class="detailhome-product-item-user">
+                                                                        <div class="detailhome-product-item-user-img">
+                                                                            <img src="./image/post/user.jpg" alt="">
+                                                                        </div>
+                                                                        <span class="detailhome-product-item-user-name">Le Van Hieu</span>
+                                                                    </div>
+                                                                    <div class="detailhome-product-item-save">
+                                                                        <input type="checkbox" hidden class="bookmark" name="" id="bookmark-check">
+                                                                        <label for="bookmark-check" class="detailhome-product-item-save-icon bookmark-check-active ti-bookmark"></label>
+                                                                        <label for="more-check" class="detailhome-product-item-save-icon ti-more">
+                                                                    <input type="checkbox" hidden class="more" name="" id="more-check">
+                                                                    <label for="more-check" class="more__share">
+                                                                        <li class="more__share-link">
+                                                                            <i class="more__share-icon fa-brands fa-facebook"></i>
+                                                                            <span class="more__share-text">Chia sẻ lên Facebook</span>
+                                                                        </li>
+                                                                        <li class="more__share-link">
+                                                                            <i class="more__share-icon fa-solid fa-envelope"></i>
+                                                                            <span class="more__share-text">Chia sẻ tới Mail</span>
+                                                                        </li>
+                                                                        <li class="more__share-link">
+                                                                            <i class="more__share-icon fa-solid fa-link"></i>
+                                                                            <span class="more__share-text">Sao chép liên kết</span>
+                                                                        </li>
+                                                                        <li class="more__share-link">
+                                                                            <i class="more__share-icon fa-solid fa-triangle-exclamation"></i>
+                                                                            <span class="more__share-text">Báo cáo bài viết</span>
+                                                                        </li>
+                                                                    </label>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="detailhome-product-item__hasta-time">
+                                                                    <span class="home-product-item__hasta">HTML & CSS</span>
+                                                                    <span class="home-product-item__time">2 giờ trước</span>
+                                                                </div>
+                                                                <p class="detailhome-product-item__info">
+                                                                    Xin chào mọi người !!! Mình là Kiên. Tâm sự với mọi người một chút. <br> Mình chỉ là newbie thôi và hiện tại mình là 1 sinh viên ngành công nghệ thông tin. Bài viết này, mình muốn note
+                                                                    lại thời điểm mình đang học tập và cố gắng với sự giúp đỡ của HT CODE để sau này có thể nhìn lại bản thân :)).<br> Và đặc biệt là cảm ơn Thầy giáo Sơn Đặng người đã bỏ ra bao tâm huyết
+                                                                    những buổi thức đêm, quay video chuẩn bị content, phát triển HT CODE như ngày hôm nay và tốt hơn trong tương lai.<br> Mình sẽ luôn theo dõi và ủng hộ những khoá học của HT CODE Trước
+                                                                    đây mới biết đến và học ngành này mình khá là mơ hồ về nó. Vì lúc đầu mình cũng khá mải chơi và ít tìm hiểu về ngành. Bỏ bẵng 2 năm đầu sinh viên lười học, không chịu tìm tòi, tìm tòi
+                                                                    thì cũng chỉ được lúc đầu hứng thú rồi chán nản. Đến khi cảm thấy hứng thú về ngành này, muốn tìm tòi và may mắn gặp được HT CODE, HT CODE như 1 động lực thúc đẩy mình hơn nữa. <br>Mình
+                                                                    cũng đã học qua một số khoá học miễn phí trên mạng, có lộ trình, nhưng theo mình thấy để tìm kiếm được một người thầy, người hướng dẫn mình như ở HT CODE nói chung và anh Sơn Đặng nói
+                                                                    riêng thì rất khó. Các bài giảng tại HT CODE được hướng dẫn khá chi tiết từ những điều nhỏ nhất.<br> Không chỉ là những bài giảng ở HT CODE mình còn học được rất nhiều cái hay, những
+                                                                    câu nói truyền cảm hứng, động lực khiến cho mình như vừa học với 1 người thầy người bạn mà cứ thế cố gắng phấn đấu. <br>Một lần nữa mình xin cảm ơn HT CODE, cảm ơn anh Sơn Đặng và chúc
+                                                                    HT CODE sẽ phát triển mạnh mẽ hơn trong tương lai. Không thể thiếu là các thành viên đang học và sẽ học tại HT CODE sẽ phát triển tốt và trở thành một cộng đồng mạnh mẽ!!!</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="authorpost">
+                                                            <h4 class="heading__route">Bài đăng cùng tác giả</h4>
+                                                            <p class="sub-heading__route">Tác giả chưa có bài đăng nào khác.</p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="hotpost">
+                                                        <h4 class="heading__route m-b-10">Bài đăng nổi bật khác</h4>
+                                                        <div class="row sm-gutter">
+                                                            <div class="col l-12 m-6 c-6">
+                                                                <a href="postdetail.html" class="home-product-item">
+                                                                    <div class="home-product-item-user-save">
+                                                                        <div class="home-product-item-user">
+                                                                            <div class="home-product-item-user-img">
+                                                                                <img src="./image/post/logo2.png" alt="">
+                                                                            </div>
+                                                                            <span class="home-product-item-user-name">HT CODE</span>
+                                                                            <i class="admin-post fa-solid fa-circle-check"></i>
+                                                                        </div>
+                                                                        <div class="home-product-item-save">
+                                                                            <input type="checkbox" hidden class="bookmark" name="" id="bookmark-check2">
+                                                                            <label for="bookmark-check2" class="home-product-item-save-icon bookmark-check-active ti-bookmark"></label>
+                                                                            <label for="more-check2" class="home-product-item-save-icon ti-more">
+                                                                                <input type="checkbox" hidden class="more" name="" id="more-check2">
+                                                                                <label for="more-check" class="more__share">
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-brands fa-facebook"></i>
+                                                                                        <span class="more__share-text">Chia sẻ lên Facebook</span>
+                                                                                    </li>
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-solid fa-envelope"></i>
+                                                                                        <span class="more__share-text">Chia sẻ tới Mail</span>
+                                                                                    </li>
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-solid fa-link"></i>
+                                                                                        <span class="more__share-text">Sao chép liên kết</span>
+                                                                                    </li>
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-solid fa-triangle-exclamation"></i>
+                                                                                        <span class="more__share-text">Báo cáo bài viết</span>
+                                                                                    </li>
+                                                                                </label>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-product-item-all">
+                                                                        <div class="home-product-item-text">
+                                                                            <h4 class="home-product-item__name">Những cách để tiến bộ vượt bậc trong lĩnh vực IT 😜</h4>
+                                                                            <p class="home-product-item__info">
+                                                                                Lĩnh vực Công nghệ thông tin là một lĩnh vực rất đa dạng và đang phát triển liên tục. Để tiến bộ vượt bậc trong lĩnh vực này, có một số cách mà bạn có thể thực hiện: Học tập liên tục: Vì lĩnh vực Công nghệ thông tin phát triển nhanh chóng và liên tục,
+                                                                                bạn cần phải học tập liên tục để cập nhật với các công nghệ mới nhất và tiếp tục phát triển kỹ năng của mình. Tham gia các khoá học và chứng chỉ: Tham gia các khoá học và
+                                                                                chứng chỉ có liên quan sẽ giúp bạn cập nhật và tiếp thu kiến thức mới nhất, nâng cao kỹ năng và trang bị cho mình những chứng chỉ cần thiết để đảm bảo cho việc tìm kiếm việc
+                                                                                làm và phát triển sự nghiệp. Thực hành và tìm kiếm dự án: Thực hành và tìm kiếm các dự án liên quan đến lĩnh vực của mình sẽ giúp bạn áp dụng kiến thức và kỹ năng của mình
+                                                                                vào thực tế. Đồng thời, tham gia các dự án sẽ giúp bạn có kinh nghiệm làm việc và tăng cơ hội được tuyển dụng. Tham gia các cộng đồng: Tham gia các cộng đồng liên quan đến
+                                                                                lĩnh vực Công nghệ thông tin sẽ giúp bạn kết nối và học hỏi từ các chuyên gia và những người có kinh nghiệm. Đồng thời, bạn còn có cơ hội tìm kiếm các dự án và hợp tác với
+                                                                                các thành viên trong cộng đồng. Phát triển các kỹ năng mềm: Ngoài các kỹ năng chuyên môn, bạn cần phát triển các kỹ năng mềm như kỹ năng giao tiếp, quản lý thời gian, và kỹ
+                                                                                năng làm việc nhóm. Những kỹ năng này sẽ giúp bạn trở thành một nhân viên hiệu quả và thành công trong công việc của mình. Theo dõi xu hướng: Theo dõi xu hướng mới trong lĩnh
+                                                                                vực Công nghệ thông tin giúp bạn cập nhật kiến thức và kỹ năng của mình, đồng thời cũng giúp bạn định hướng cho sự nghiệp của mình trong tương lai. Tìm kiếm các cơ hội thăng
+                                                                                tiến: Tìm kiếm các cơ hội thăng tiến trong công việc và tìm kiếm những công việc mới trong lĩnh vực Công nghệ thông tin sẽ giúp bạn phát triển sự nghiệp và tiến bộ vượt bậc.
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="home-product-item__img">
+                                                                            <img src="../assets/image/post/postadmin.jpg" alt="" class="home-product-item__img-show">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-product-item__hasta-time">
+                                                                        <span class="home-product-item__hasta">Front-end</span>
+                                                                        <span class="home-product-item__hasta">Back-end</span>
+                                                                        <span class="home-product-item__hasta">Fullstack</span>
+                                                                        <span class="home-product-item__time">1 tuần trước</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="col l-12 m-6 c-6">
+                                                                <a href="postdetail.html" class="home-product-item">
+                                                                    <div class="home-product-item-user-save">
+                                                                        <div class="home-product-item-user">
+                                                                            <div class="home-product-item-user-img">
+                                                                                <img src="./image/post/user2.jpg" alt="">
+                                                                            </div>
+                                                                            <span class="home-product-item-user-name">Tình yêu tui</span>
+                                                                        </div>
+                                                                        <div class="home-product-item-save">
+                                                                            <input type="checkbox" hidden class="bookmark" name="" id="bookmark-check3">
+                                                                            <label for="bookmark-check3" class="home-product-item-save-icon bookmark-check-active ti-bookmark"></label>
+                                                                            <label for="more-check3" class="home-product-item-save-icon ti-more">
+                                                                                <input type="checkbox" hidden class="more" name="" id="more-check3">
+                                                                                <label for="more-check" class="more__share">
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-brands fa-facebook"></i>
+                                                                                        <span class="more__share-text">Chia sẻ lên Facebook</span>
+                                                                                    </li>
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-solid fa-envelope"></i>
+                                                                                        <span class="more__share-text">Chia sẻ tới Mail</span>
+                                                                                    </li>
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-solid fa-link"></i>
+                                                                                        <span class="more__share-text">Sao chép liên kết</span>
+                                                                                    </li>
+                                                                                    <li class="more__share-link">
+                                                                                        <i class="more__share-icon fa-solid fa-triangle-exclamation"></i>
+                                                                                        <span class="more__share-text">Báo cáo bài viết</span>
+                                                                                    </li>
+                                                                                </label>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-product-item-all">
+                                                                        <div class="home-product-item-text">
+                                                                            <h4 class="home-product-item__name">Xử Lý Bất Đồng Bộ Trong Javascript - Phần 1</h4>
+                                                                            <p class="home-product-item__info">
+                                                                                Chắc chắn khi lập trình, bạn sẽ có các công việc cần thời gian delay (gọi API, lấy dữ liệu từ Database, đọc/ghi file,...). Và đây chính là lúc xử lý bất đồng bộ lên ngôi, hãy cùng mình tìm hiểu về bất đồng bộ trong Javascript và chúng giúp code dễ dàng
+                                                                                hơn thế nào nhé. Trong phần đầu tiên này, chúng ta sẽ cùng tìm hiểu và khái niệm cũng như một số phương án xử lý hay dùng.</p>
+                                                                        </div>
+                                                                        <div class="home-product-item__img">
+                                                                            <img src="../assets/image/post/post3.jpg" alt="" class="home-product-item__img-show">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-product-item__hasta-time">
+                                                                        <span class="home-product-item__hasta">HTML & CSS</span>
+                                                                        <span class="home-product-item__time">7 tháng trước</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </header>
+
+    <div class="app__container">
+        <div class="grid wide">
+            <div class="app__content">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="grid wide">
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

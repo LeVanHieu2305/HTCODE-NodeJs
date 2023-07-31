@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách các khóa học lập trình của bạn | by HT CODE</title>
+    <link rel="shortcut icon" href="./assets/img/iconlogo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/course.css">
+    <link rel="stylesheet" href="../assets/css/gird.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-1">
+                        <nav class="nav-bar">
+                            <!-- Account - Thêm bài viết - Home -  Lộ trình - Khóa học - Bài viết -->
+                            <div class="menu-items">
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <!-- User -->
+                                        <label for="user-check" href="#" class="nav-link border w-h-40">
+                                            <img src="../assets/image/user.jpg" alt="" class="img-user">
+                                        </label>
+                                        <input type="checkbox" hidden class="user" name="" id="user-check">
+                                        <ul class="user__share">
+                                            <li class="user__share-link">
+                                                <div class="user__share-link-username">
+                                                    <div class="user__share-link-img">
+                                                        <img src="../assets/image/user.jpg" alt="">
+                                                    </div>
+                                                    <div class="user__share-link-name">
+                                                        <h4 class="user__share-heading">Le Van Hieu</h4>
+                                                        <p class="user__share-sub">@levanhieu23</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Bảng điều khiển</a>
+                                                <a href="#" class="user__share-text">Khóa học của bạn</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Trang cá nhân</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Viết blog</a>
+                                                <a href="#" class="user__share-text">Bài viết của tôi</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Bài viết yêu thích</a>
+                                                <a href="#" class="user__share-text">Bài viết đã lưu</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Cài đặt</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Plus -->
+                                        <a href="#" class="nav-link nav-link-active w-h-40">
+                                            <i class="uil uil-plus nav-link-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Home -->
+                                        <a href="../index.html" class="nav-link w-h-72 ">
+                                            <i class="uil uil-estate nav-link-icon"></i>
+                                            <span class="link-name">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Lộ trình -->
+                                        <a href="route.html" class="nav-link w-h-72">
+                                            <i class="uil uil-location-arrow-alt nav-link-icon"></i>
+                                            <span class="link-name">Lộ trình</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Khóa học -->
+                                        <a href="course.html" class="nav-link w-h-72 menu__active">
+                                            <i class="uil uil-book-open nav-link-icon"></i>
+                                            <span class="link-name">Khóa học</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Bài viết -->
+                                        <a href="post.html" class="nav-link w-h-72">
+                                            <i class="uil uil-notes nav-link-icon"></i>
+                                            <span class="link-name">Bài viết</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Đăng xuất-->
+                                <ul class="logout-mode">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link w-h-72">
+                                            <i class="uil uil-signout signout--active nav-link-icon"></i>
+                                            <span class="link-name signout--active">Đăng xuất</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col l-11">
+                        <div class="dashboard">
+                            <div class="top">
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img src="../assets/image/logo2.png" alt="" class="img-logo">
+                                    </a>
+                                    <h4 class="text-logo">Lập trình - Lập nghiệp</h4>
+                                </div>
+
+                                <div class="search-box">
+                                    <i class="uil uil-search"></i>
+                                    <input type="search" placeholder="Tìm kiếm khóa học, bài viết, video, ...">
+                                </div>
+
+                                <div class="bell-cart">
+                                    <!--  Bell-->
+                                    <li class="header__navbar-fonticon-list header__wrap">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <a href="./assets/cart.html">
+                                                <i class="header__navbar-fonticon-icon ti-bell"></i>
+                                                <span class="header__icon-notice">3</span>
+                                            </a>
+
+                                            <!-- No icon class = header__icon-list--no-icon -->
+                                            <div class="header__list">
+                                                <img src="assets/img/no-cart.png" alt="" class="header__icon-list--no-icon header__icon-no-icon-img">
+                                                <span class="header__icon-list--no-icon header__icon-list--no-icon-msg">Chưa có sản phẩm</span>
+
+                                                <!-- Have icon -->
+                                                <!-- <h4 class="header__icon-heading">Thông báo mới nhất</h4> -->
+                                                <ul class="header__icon-list-items">
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Cart -->
+                                    <li class="header__navbar-fonticon-list header__wrap cart-check-list">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <label for="cart-check">
+                                                <i class="header__navbar-fonticon-icon ti-shopping-cart"></i>
+                                                <span class="header__icon-notice">0</span>
+                                            </label>
+                                        </div>
+                                        <input type="checkbox" hidden id="cart-check" class="cart">
+                                        <div class="cart__share">
+                                            <label for="cart-check" class="ti-close cart-icon-close"></label>
+                                            <table class="cart__table">
+                                                <caption>Giỏ hàng của bạn</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sản phẩm</th>
+                                                        <th>Hình ảnh</th>
+                                                        <th>Số lượng</th>
+                                                        <th>Thành tiền</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <!-- No Have product in cart -->
+                                                <tbody class="nohave__cart">
+                                                    <tr>
+                                                        <td class="nohave__cart-heading" colspan="6">You have no products in your shopping cart</td>
+                                                    </tr>
+                                                </tbody>
+
+                                                <!-- Have product in cart -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td>NodeJS</td>
+                                                        <td><img src="../assets/image/course/nodejs.png" alt="" class="cart__table-img"></td>
+                                                        <td>
+                                                            <input type="number" min="1" max="2" value="1">
+                                                        </td>
+                                                        <td>đ 1.799.000</td>
+                                                        <td><span class="remove">Xóa</span></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>ReactJS</td>
+                                                        <td><img src="../assets/image/course/reactjs.png" alt="" class="cart__table-img"></td>
+                                                        <td>
+                                                            <input type="number" min="1" max="2" value="1">
+                                                        </td>
+                                                        <td>đ 2.999.000</td>
+                                                        <td><span class="remove">Xóa</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="total__cart">
+                                                <span>Tổng tiền:</span><span class="total__cart-active"> đ 3.234.000</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Login -->
+                                    <li class="header__navbar-fonticon-list header__wrap">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <a href="./login.html" class="btn-login">Đăng nhập</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+
+                            <div class="dash-content">
+                                <div class="course__statis">
+                                    <div class="row sm-gutter">
+                                        <div class="col l-3 m-6 c-6">
+                                            <div class="course__statis-item">
+                                                <div class="course__statis-item-icon icon-red">
+                                                    <i class="ti-heart"></i>
+                                                </div>
+                                                <div class="course__statis-item-content">
+                                                    <span class="course__statis-item-content-sub">Yêu thích</span>
+                                                    <h5 class="course__statis-item-content-head">14 khóa học</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-6 c-6">
+                                            <div class="course__statis-item">
+                                                <div class="course__statis-item-icon icon-blue">
+                                                    <i class="ti-timer"></i>
+                                                </div>
+                                                <div class="course__statis-item-content">
+                                                    <span class="course__statis-item-content-sub">Đang học</span>
+                                                    <h5 class="course__statis-item-content-head">8 khóa học</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-6 c-6">
+                                            <div class="course__statis-item">
+                                                <div class="course__statis-item-icon icon-green">
+                                                    <i class="ti-medall"></i>
+                                                </div>
+                                                <div class="course__statis-item-content">
+                                                    <span class="course__statis-item-content-sub">Hoàn thành</span>
+                                                    <h5 class="course__statis-item-content-head">4 khóa học</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3 m-6 c-6">
+                                            <div class="course__statis-item">
+                                                <div class="course__statis-item-icon icon-golden">
+                                                    <i class="ti-bookmark-alt"></i>
+                                                </div>
+                                                <div class="course__statis-item-content">
+                                                    <span class="course__statis-item-content-sub">Chứng chỉ</span>
+                                                    <h5 class="course__statis-item-content-head">4 khóa học</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="course__ongoing">
+                                    <div class="course__ongoing-header">
+                                        <h4 class="home__product-title">Đang học</h4>
+                                        <div class="transfer">
+                                            <i class="transfer__arrow fa-solid ti-angle-left"></i>
+                                            <i class="transfer__arrow fa-solid ti-angle-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row sm-gutter">
+                                        <!-- HTML CSS PRO -->
+                                        <div class="col l-3 m-6 c-6">
+                                            <a href="detailproduct.html" class="home-product-item">
+                                                <div class="home-product-item__img">
+                                                    <img src="../assets/image/course/html.png" alt="" class="home-product-item__img-show">
+                                                </div>
+                                                <h4 class="home-product-item__name">HTML cấp tốc 10 days</h4>
+                                                <div class="home-product-item__type">
+                                                    <span class="home-product-item__classtify">LeVanHieu</span>
+                                                </div>
+                                                <div class="home-product-item__progress">
+                                                    <div class="progress__all">
+                                                        <span class="progress__all-active"></span>
+                                                    </div>
+                                                    <span class="home-product-item__progress-quanity">90%</span>
+                                                </div>
+
+                                                <div class="home-product-item__favicon">
+                                                    <div class="home-product-item__list">
+                                                        <i class="home-product-item__list-icon fa-regular fa-heart"></i>
+                                                    </div>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- JS NÂNG CAO -->
+                                        <div class="col l-3 m-6 c-6">
+                                            <a href="detailproduct.html" class="home-product-item">
+                                                <div class="home-product-item__img">
+                                                    <img src="../assets/image/course/jsnangcao.png" alt="" class="home-product-item__img-show">
+                                                </div>
+                                                <h4 class="home-product-item__name">JS NÂNG CAO</h4>
+                                                <div class="home-product-item__type">
+                                                    <span class="home-product-item__classtify">BichThao</span>
+                                                </div>
+                                                <div class="home-product-item__progress">
+                                                    <div class="progress__all">
+                                                        <span class="progress__all-active width-130"></span>
+                                                    </div>
+                                                    <span class="home-product-item__progress-quanity">65%</span>
+                                                </div>
+
+                                                <div class="home-product-item__favicon">
+                                                    <div class="home-product-item__list">
+                                                        <i class="home-product-item__list-icon fa-regular fa-heart"></i>
+                                                    </div>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col l-3 m-6 c-6">
+                                            <a href="detailproduct.html" class="home-product-item">
+                                                <div class="home-product-item__img">
+                                                    <img src="../assets/image/course/reactjs.png" alt="" class="home-product-item__img-show">
+                                                </div>
+                                                <h4 class="home-product-item__name">REACT JS</h4>
+                                                <div class="home-product-item__type">
+                                                    <span class="home-product-item__classtify">ThaoThui</span>
+                                                </div>
+                                                <div class="home-product-item__progress">
+                                                    <div class="progress__all">
+                                                        <span class="progress__all-active width-38"></span>
+                                                    </div>
+                                                    <span class="home-product-item__progress-quanity">38%</span>
+                                                </div>
+
+                                                <div class="home-product-item__favicon">
+                                                    <div class="home-product-item__list">
+                                                        <i class="home-product-item__list-icon fa-regular fa-heart"></i>
+                                                    </div>
+
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col l-3 m-6 c-6">
+                                            <a href="detailproduct.html" class="home-product-item">
+                                                <div class="home-product-item__img">
+                                                    <img src="../assets/image/course/nodejs.png" alt="" class="home-product-item__img-show">
+                                                </div>
+                                                <h4 class="home-product-item__name">NODE JS</h4>
+                                                <div class="home-product-item__type">
+                                                    <span class="home-product-item__classtify">LeVanHieu</span>
+                                                </div>
+                                                <div class="home-product-item__progress">
+                                                    <div class="progress__all">
+                                                        <span class="progress__all-active width-4"></span>
+                                                    </div>
+                                                    <span class="home-product-item__progress-quanity">4%</span>
+                                                </div>
+
+                                                <div class="home-product-item__favicon">
+                                                    <div class="home-product-item__list">
+                                                        <i class="home-product-item__list-icon fa-regular fa-heart"></i>
+                                                    </div>
+
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="app__content">
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+            </div>
+        </footer>
+        </div>
+</body>
+
+</html>

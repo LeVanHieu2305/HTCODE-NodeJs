@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiến Thức Nhập Môn IT | by HT CODE | Tự học lập trình từ đầu ở nhà</title>
+    <link rel="shortcut icon" href="./assets/img/iconlogo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/detailproduct.css">
+    <link rel="stylesheet" href="../assets/css/gird.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-1">
+                        <nav class="nav-bar">
+                            <!-- Account - Thêm bài viết - Home -  Lộ trình - Khóa học - Bài viết -->
+                            <div class="menu-items">
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <!-- User -->
+                                        <label for="user-check" href="#" class="nav-link border w-h-40">
+                                            <img src="../assets/image/user.jpg" alt="" class="img-user">
+                                        </label>
+                                        <input type="checkbox" hidden class="user" name="" id="user-check">
+                                        <ul class="user__share">
+                                            <li class="user__share-link">
+                                                <div class="user__share-link-username">
+                                                    <div class="user__share-link-img">
+                                                        <img src="../assets/image/user.jpg" alt="">
+                                                    </div>
+                                                    <div class="user__share-link-name">
+                                                        <h4 class="user__share-heading">Le Van Hieu</h4>
+                                                        <p class="user__share-sub">@levanhieu23</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Bảng điều khiển</a>
+                                                <a href="#" class="user__share-text">Khóa học của bạn</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Trang cá nhân</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Viết blog</a>
+                                                <a href="#" class="user__share-text">Bài viết của tôi</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Bài viết yêu thích</a>
+                                                <a href="#" class="user__share-text">Bài viết đã lưu</a>
+                                            </li>
+                                            <li class="user__share-link">
+                                                <a href="#" class="user__share-text">Cài đặt</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Plus -->
+                                        <a href="#" class="nav-link nav-link-active w-h-40">
+                                            <i class="uil uil-plus nav-link-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Home -->
+                                        <a href="../index.html" class="nav-link w-h-72 ">
+                                            <i class="uil uil-estate nav-link-icon"></i>
+                                            <span class="link-name">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Lộ trình -->
+                                        <a href="route.html" class="nav-link w-h-72">
+                                            <i class="uil uil-location-arrow-alt nav-link-icon"></i>
+                                            <span class="link-name">Lộ trình</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Khóa học -->
+                                        <a href="course.html" class="nav-link w-h-72">
+                                            <i class="uil uil-book-open nav-link-icon"></i>
+                                            <span class="link-name">Khóa học</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- Bài viết -->
+                                        <a href="post.html" class="nav-link w-h-72">
+                                            <i class="uil uil-notes nav-link-icon"></i>
+                                            <span class="link-name">Bài viết</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Đăng xuất-->
+                                <ul class="logout-mode">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link w-h-72">
+                                            <i class="uil uil-signout signout--active nav-link-icon"></i>
+                                            <span class="link-name signout--active">Đăng xuất</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col l-11">
+                        <div class="dashboard">
+                            <div class="top">
+                                <div class="logo">
+                                    <a href="../index.html">
+                                        <img src="../assets/image/logo2.png" alt="" class="img-logo">
+                                    </a>
+                                    <h4 class="text-logo">
+                                        <a href="../index.html" class="back"><i class="back-icon ti-angle-left"></i>Quay lại</a>
+                                    </h4>
+                                </div>
+
+                                <div class="search-box">
+                                    <i class="uil uil-search"></i>
+                                    <input type="search" placeholder="Tìm kiếm khóa học, bài viết, video, ...">
+                                </div>
+
+                                <div class="bell-cart">
+                                    <!--  Bell-->
+                                    <li class="header__navbar-fonticon-list header__wrap">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <a href="./assets/cart.html">
+                                                <i class="header__navbar-fonticon-icon ti-bell"></i>
+                                                <span class="header__icon-notice">3</span>
+                                            </a>
+
+                                            <!-- No icon class = header__icon-list--no-icon -->
+                                            <div class="header__list">
+                                                <img src="assets/img/no-cart.png" alt="" class="header__icon-list--no-icon header__icon-no-icon-img">
+                                                <span class="header__icon-list--no-icon header__icon-list--no-icon-msg">Chưa có sản phẩm</span>
+
+                                                <!-- Have icon -->
+                                                <!-- <h4 class="header__icon-heading">Thông báo mới nhất</h4> -->
+                                                <ul class="header__icon-list-items">
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="header__icon-item">
+                                                        <!-- Hình, text, dưới text time, dấu chấm hoạt động -->
+                                                        <div class="header__icon-item-info">
+                                                            <div class="header__icon-item-head">
+                                                                <span class="header__icon-item-name">Gọi em là lịch sử, vì em chỉ sống trong quá khứ.</span>
+                                                                <span class="header__icon-item-time">10 phút trước</span>
+                                                            </div>
+                                                            <div class="header__icon-item-body">
+                                                                <div class="header__icon-item-active"></div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Cart -->
+                                    <li class="header__navbar-fonticon-list header__wrap cart-check-list">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <label for="cart-check">
+                                                <i class="header__navbar-fonticon-icon ti-shopping-cart"></i>
+                                                <span class="header__icon-notice">0</span>
+                                            </label>
+                                        </div>
+                                        <input type="checkbox" hidden id="cart-check" class="cart">
+                                        <div class="cart__share">
+                                            <label for="cart-check" class="ti-close cart-icon-close"></label>
+                                            <table class="cart__table">
+                                                <caption>Giỏ hàng của bạn</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sản phẩm</th>
+                                                        <th>Hình ảnh</th>
+                                                        <th>Số lượng</th>
+                                                        <th>Thành tiền</th>
+                                                        <th>Hành động</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <!-- No Have product in cart -->
+                                                <tbody class="nohave__cart">
+                                                    <tr>
+                                                        <td class="nohave__cart-heading" colspan="6">You have no products in your shopping cart</td>
+                                                    </tr>
+                                                </tbody>
+
+                                                <!-- Have product in cart -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td>NodeJS</td>
+                                                        <td><img src="../assets/image/course/nodejs.png" alt="" class="cart__table-img"></td>
+                                                        <td>
+                                                            <input type="number" min="1" max="2" value="1">
+                                                        </td>
+                                                        <td>đ 1.799.000</td>
+                                                        <td><span class="remove">Xóa</span></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>ReactJS</td>
+                                                        <td><img src="../assets/image/course/reactjs.png" alt="" class="cart__table-img"></td>
+                                                        <td>
+                                                            <input type="number" min="1" max="2" value="1">
+                                                        </td>
+                                                        <td>đ 2.999.000</td>
+                                                        <td><span class="remove">Xóa</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="total__cart">
+                                                <span>Tổng tiền:</span><span class="total__cart-active"> đ 3.234.000</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Login -->
+                                    <li class="header__navbar-fonticon-list header__wrap">
+                                        <div class="header__navbar-fonticon-link icon__wrap">
+                                            <a href="./login.html" class="btn-login">Đăng nhập</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+
+                            <div class="dash-content">
+                                <div class="detailproduct">
+                                    <div class="row sm-gutter">
+                                        <div class="col l-8 m-6 c-6">
+                                            <h4 class="heading__route">Kiến Thức Nhập Môn IT</h4>
+                                            <p class="sub-heading__route">Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.</p>
+
+                                            <h5 class="detail__heading">Bạn sẽ học được gì?</h5>
+                                            <div class="row sm-gutter">
+                                                <div class="col l-6 m-6 c-6">
+                                                    <ul class="detail__list">
+                                                        <li class="detail__item">
+                                                            <i class="detail__item-icon ti-check"></i>
+                                                            <span class="detail__item-text">Các kiến thức cơ bản, nền móng của ngành IT</span></li>
+                                                        <li class="detail__item">
+                                                            <i class="detail__item-icon ti-check"></i>
+                                                            <span class="detail__item-text">Các khái niệm, thuật ngữ cốt lõi khi triển khai ứng dụng</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col l-6 m-6 c-6">
+                                                    <ul class="detail__list">
+                                                        <li class="detail__item">
+                                                            <i class="detail__item-icon ti-check"></i>
+                                                            <span class="detail__item-text">Các mô hình, kiến trúc cơ bản khi triển khai ứng dụng</span></li>
+                                                        <li class="detail__item">
+                                                            <i class="detail__item-icon ti-check"></i>
+                                                            <span class="detail__item-text">Hiểu hơn về cách internet và máy vi tính hoạt động</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Nội dung khóa học -->
+                                            <div class="content__course">
+                                                <h5 class="detail__heading">Nội dung khóa học</h5>
+                                                <div class="content__course-info">
+                                                    <ul class="content__course-info-detail">
+                                                        <li class="content__course-chapter"><span class="content__course-chapter-highline">4</span> chương</li>
+                                                        <li class="content__course-chapter"><span class="content__course-chapter-highline">11</span> bài học</li>
+                                                        <li class="content__course-chapter">Thời lượng <span class="content__course-chapter-highline">03 giờ 25 phút</span></li>
+                                                    </ul>
+                                                    <div class="zoom__course">Mở rộng khóa học</div>
+
+                                                </div>
+                                                <div class="content__course-detail">
+                                                    <!-- BÀI 1 -->
+                                                    <div class="content__course-detail-list">
+                                                        <input type="checkbox" hidden name="" id="check-input" class="content__course-detail-input">
+                                                        <label for="check-input" class="content__course-detail-name">
+                                                            <div class="content__course-detail-name-item">
+                                                                <i class="content__course-detail-icon ti-plus"></i>
+                                                                <i class="content__course-detail-icon content__course-detail-icon-hidden ti-minus"></i>
+                                                                <span class="content__course-detail-title">1. Khái niệm kỹ thuật cần biết</span> 
+                                                            </div>
+                                                            <div class="content__course-detail-learn">2 bài học</div>
+                                                            </label>
+                                                        <label for="check-input" class="content__course-detail-check">
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">1. Mô hình Client - Server là gì?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">11:35</div>
+                                                            </div>
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">2. Domain là gì? Tên miền là gì?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">10:34</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- BÀI 2 -->
+                                                    <div class="content__course-detail-list">
+                                                        <input type="checkbox" hidden name="" id="check-input2" class="content__course-detail-input">
+                                                        <label for="check-input2" class="content__course-detail-name">
+                                                            <div class="content__course-detail-name-item">
+                                                                <i class="content__course-detail-icon ti-plus"></i>
+                                                                <i class="content__course-detail-icon content__course-detail-icon-hidden ti-minus"></i>
+                                                                <span class="content__course-detail-title">2. Môi trường, con người IT</span> 
+                                                            </div>
+                                                            <div class="content__course-detail-learn">3 bài học</div>
+                                                            </label>
+                                                        <label for="check-input2" class="content__course-detail-check">
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">3. Học IT cần tố chất gì? Góc nhìn khác từ chuyên gia định hướng giáo dục</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">24:10</div>
+                                                            </div>
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">4. Sinh viên IT đi thực tập tại doanh nghiệp cần biết những gì?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">35:51</div>
+                                                            </div>
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">5. Trải nghiệm thực tế sau 2 tháng làm việc tại doanh nghiệp của học viên F8?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">47:13</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- BÀI 3 -->
+                                                    <div class="content__course-detail-list">
+                                                        <input type="checkbox" hidden name="" id="check-input3" class="content__course-detail-input">
+                                                        <label for="check-input3" class="content__course-detail-name">
+                                                            <div class="content__course-detail-name-item">
+                                                                <i class="content__course-detail-icon ti-plus"></i>
+                                                                <i class="content__course-detail-icon content__course-detail-icon-hidden ti-minus"></i>
+                                                                <span class="content__course-detail-title">3. Phương pháp và định hướng</span> 
+                                                            </div>
+                                                            <div class="content__course-detail-learn">4 bài học</div>
+                                                            </label>
+                                                        <label for="check-input3" class="content__course-detail-check">
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">6. Phương pháp học lập trình của Admin HT CODE?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">24:06</div>
+                                                            </div>
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">7. Làm sao để có thu nhập cao và đi xa hơn trong ngành IT?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">25:40</div>
+                                                            </div>
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">8. 8 lời khuyên giúp học lập trình tại F8 hiệu quả hơn!</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">06:27</div>
+                                                            </div>
+                                                            <div class="content__course-detail-check-item">
+                                                                <div class="content__course-detail-sub-name">
+                                                                    <i class="content__course-detail-check-icon ti-control-play"></i>
+                                                                    <span class="content__course-detail-check-title">9. Tại sao nên học trên website này hơn là học trên Youtube?</span> 
+                                                                </div>
+                                                                <div class="content__course-detail-time">08:14</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- BÀI 4 -->
+                                                    <div class="content__course-detail-list">
+                                                        <input type="checkbox" hidden name="" id="check-input4" class="content__course-detail-input">
+                                                        <label for="check-input4" class="content__course-detail-name">
+                                                                <div class="content__course-detail-name-item">
+                                                                    <label for="check-input4" class="content__course-detail-icon ti-plus"></label>
+                                                        <i class="content__course-detail-icon content__course-detail-icon-hidden ti-minus"></i>
+                                                        <span class="content__course-detail-title">4. Hoàn thành khóa học</span>
+                                                    </div>
+                                                    <div class="content__course-detail-learn">2 bài học</div>
+                                                    </label>
+                                                    <label for="check-input4" class="content__course-detail-check">
+                                                                <div class="content__course-detail-check-item">
+                                                                    <div class="content__course-detail-sub-name">
+                                                                        <i class="content__course-detail-check-icon ti-file"></i>
+                                                                        <span class="content__course-detail-check-title">10. Ứng tuyển xin việc làm</span> 
+                                                                    </div>
+                                                                    <div class="content__course-detail-time">12:00</div>
+                                                                </div>
+                                                                <div class="content__course-detail-check-item">
+                                                                    <div class="content__course-detail-sub-name">
+                                                                        <i class="content__course-detail-check-icon ti-file"></i>
+                                                                        <span class="content__course-detail-check-title">11. Hoàn thành khóa học</span> 
+                                                                    </div>
+                                                                    <div class="content__course-detail-time">01:00</div>
+                                                                </div>
+                                                            </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-6">
+                                        <div class="couser__info">
+                                            <img src="./image/course/IT.png" alt="" class="img-course">
+                                        </div>
+                                        <div class="info__course">
+                                            <div class="home-product-item__nameprice">
+                                                <span hidden class="home-product-item__namecourse">Kiến Thức Nhập Môn IT</span>
+                                                <span class="home-product-item__price-current">đ 3.720.000</span>
+                                                <span class="home-product-item__price-old">đ 2.599.000</span>
+                                            </div>
+                                            <div class="cart-order">
+                                                <button type="submit" class="home-product-item__button">
+                                                    <a href="#" class="home-product-item__button-link">Thêm vào giỏ hàng</a>
+                                                </button>
+                                                <button type="submit" class="home-product-item__button home-product-item__button-active">
+                                                    <a href="#" class="home-product-item__button-link home-product-item__button-link-active">Mua khóa học</a>
+                                                </button>
+                                            </div>
+                                            <ul class="info__course-list">
+                                                <li class="info__course-item"><i class="info__course-item-icon ti-cup"></i> Trình độ cơ bản</li>
+                                                <li class="info__course-item"><i class="info__course-item-icon ti-video-clapper"></i> Tổng số <span class="info__course-item-highline"> 11 </span> bài học</li>
+                                                <li class="info__course-item"><i class="info__course-item-icon ti-time"></i> Thời lượng <span class="info__course-item-highline"> 03 giờ 25 phút</span></li>
+                                                <li class="info__course-item"><i class="info__course-item-icon ti-world"></i> Học mọi lúc, mọi nơi</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </header>
+
+    <div class="app__container">
+        <div class="grid wide">
+            <div class="app__content">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="grid wide">
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
